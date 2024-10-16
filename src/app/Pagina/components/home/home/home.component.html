@@ -1,0 +1,23 @@
+<div class="custom-container">
+  <div class="card-grid" *ngFor="let person of persona; let i = index">
+    <div class="card mb-3 shadow-sm custom-card">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img [src]="person.img" class="img-fluid rounded-start" alt="Foto de {{person.name}}">
+        </div>
+        <div class="col-md-8 d-flex flex-column justify-content-between">
+          <div class="card-body">
+            <h5 class="card-title">{{person.name}}</h5>
+            <p class="card-text">
+              This is a wider card with supporting text below as a natural lead-in to additional content.
+            </p>
+            <p class="card-text"><small class="text-muted">{{person.carnet}}</small></p>
+          </div>
+          <div class="card-footer text-end">
+            <button  (click)="verPersona(i)"  type="button" class="btn btn-custom">Sobre Mí</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

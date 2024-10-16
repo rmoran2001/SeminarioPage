@@ -1,0 +1,82 @@
+/* Contenedor general */
+.custom-container {
+  padding: 20px;
+  background-color: #f8f9fa; /* Fondo claro */
+}
+
+/* Grid flexible para las cards */
+.card-grid {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px; /* Espacio entre las cards */
+}
+
+/* Card estilo responsive */
+.custom-card {
+  width: 100%; /* Ancho completo en pantallas pequeñas */
+  max-width: 540px;
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Animación al hacer hover en la card */
+.custom-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo de la imagen en la card */
+.custom-card img {
+  border-radius: 15px 0 0 15px;
+  object-fit: cover; /* Para asegurar que la imagen cubra bien el espacio */
+}
+
+/* Media query para pantallas medianas (tabletas) */
+@media (min-width: 768px) {
+  .card-grid {
+    justify-content: space-around; /* Distribuir cards en fila */
+  }
+  .custom-card {
+    max-width: 48%; /* Ocupa el 48% del contenedor en tabletas */
+  }
+}
+
+/* Media query para pantallas grandes (escritorio) */
+@media (min-width: 992px) {
+  .custom-card {
+    max-width: 32%; /* Ocupa un tercio del contenedor en pantallas grandes */
+  }
+}
+/* Estilos para el botón "Sobre Mí" */
+.btn-custom {
+  background-color: #007bff; /* Color de fondo azul */
+  color: white; /* Color del texto */
+  border: none; /* Sin borde */
+  border-radius: 20px; /* Bordes redondeados */
+  padding: 10px 20px; /* Espaciado interno */
+  font-weight: bold; /* Negrita */
+  font-size: 16px; /* Tamaño de fuente */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+}
+
+/* Efecto al pasar el mouse sobre el botón */
+.btn-custom:hover {
+  background-color: #0056b3; /* Color más oscuro al pasar el mouse */
+  transform: scale(1.05); /* Escala del botón */
+}
+
+/* Efecto al hacer clic en el botón */
+.btn-custom:active {
+  transform: scale(0.95); /* Escala hacia abajo al hacer clic */
+}
+
+/* Efecto de sombra en el botón */
+.btn-custom {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+.btn-custom:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Sombra más intensa al pasar el mouse */
+}

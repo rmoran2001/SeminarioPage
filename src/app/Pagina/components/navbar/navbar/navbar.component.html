@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+  <div class="container-fluid">
+    <!-- Logo -->
+    <a class="navbar-brand" href="#">
+      <img src="assets/logoUmg.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top logo">
+      <span class="ms-2">Ingeniería Sistemas</span> <!-- Texto de la empresa junto al logo -->
+    </a>
+
+    <!-- Botón colapsable en pantallas pequeñas -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menú colapsable -->
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" [routerLink]="['/home']" routerLinkActive="router-link-active"  >Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" [routerLink]="['/about']" routerLinkActive="router-link-active"  >Sobre el Sistema</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" routerLinkActive="router-link-active" href="https://seashell-app-n6lj3.ondigitalocean.app/productos">Nuestro proyecto</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+

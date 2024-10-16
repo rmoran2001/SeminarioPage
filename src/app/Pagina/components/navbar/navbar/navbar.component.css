@@ -1,0 +1,55 @@
+.navbar {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar:hover {
+  transform: translateY(-5px); /* Levanta el navbar al pasar el mouse */
+  background-color: #e9ecef; /* Cambia el color de fondo al pasar el mouse */
+}
+
+.nav-link {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #007bff; /* Cambia el color del texto al pasar el mouse */
+  transform: scale(1.05); /* Aumenta el tamaño del enlace al pasar el mouse */
+  text-decoration: underline; /* Agrega un subrayado en el enlace */
+}
+
+.navbar-brand img {
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover img {
+  transform: scale(1.1); /* Aumenta el tamaño del logo al pasar el mouse */
+}
+.logo {
+  transition: transform 0.3s ease; /* Transición para el efecto de aumento */
+}
+
+.navbar-brand:hover .logo {
+  transform: scale(1.1); /* Aumenta el tamaño del logo al pasar el mouse */
+}
+
+.navbar-brand span {
+  font-size: 24px; /* Tamaño de fuente del texto */
+  font-weight: bold; /* Peso de la fuente */
+  color: #343a40; /* Color del texto */
+  transition: color 0.3s ease; /* Transición para el cambio de color */
+}
+
+.navbar-brand:hover span {
+  color: #007bff; /* Cambia el color del texto al pasar el mouse */
+}
+
+/* Eliminar la línea de subrayado de los enlaces activos y al pasar el mouse */
+.nav-link.active,
+.nav-link:hover {
+  text-decoration: none !important; /* Elimina la línea debajo del texto */
+}
+
+/* También puedes deshabilitar el efecto hover para todos los enlaces */
+.nav-link {
+  text-decoration: none; /* Elimina la línea por defecto de todos los enlaces */
+}
